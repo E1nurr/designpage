@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проектирование главной страницы сайта — дистанционное занятие</title>
+  <meta name="description" content="Дистанционное занятие по веб-дизайну: от структуры главной страницы до интерактивного прототипа в Figma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Декоративные шестерёнки -->
+  <div class="gears gears--top" aria-hidden="true">
+    <span class="gear gear--1"></span>
+    <span class="gear gear--2"></span>
+    <span class="gear gear--3"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <span class="logo__mark">⚙</span>
+        <span class="logo__text">Web&nbsp;Design&nbsp;<em>Atelier</em></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">О занятии</a>
+        <a href="#goals" class="nav__link">Цели</a>
+        <a href="#stages" class="nav__link">Этапы</a>
+        <a href="#tools" class="nav__link">Инструменты</a>
+        <a href="#task" class="nav__link">Задание</a>
+        <a href="#criteria" class="nav__link">Оценивание</a>
+        <a href="#resources" class="nav__link">Ресурсы</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">Дистанционное занятие · 90 минут · 1–2 курс «Дизайн»</p>
+      <h1 class="hero__title">Проектирование главной страницы сайта:<br><span>от структуры до интерактивного прототипа</span></h1>
+      <p class="hero__lead">
+        Практическое занятие по веб-дизайну: разбираем принципы UI/UX, структуру лендинга
+        и собираем интерактивный прототип главной страницы в Figma.
+      </p>
+      <div class="hero__actions">
+        <a href="#task" class="btn btn--primary">Перейти к заданию</a>
+        <a href="#stages" class="btn btn--ghost">Смотреть этапы</a>
+      </div>
+      <ul class="hero__stats">
+        <li><strong>5</strong><span>этапов занятия</span></li>
+        <li><strong>1440</strong><span>пикселей ширины</span></li>
+        <li><strong>14</strong><span>баллов максимум</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title"><span class="section__deco">⚙</span> О занятии</h2>
+      <p class="section__lead">
+        Формат — дистанционное обучение с сочетанием синхронной и асинхронной работы.
+        Синхронная часть проходит в Яндекс Телемосте, материалы и работы размещаются на Яндекс Диске,
+        тесты и рефлексия — в Яндекс Формах.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h3 class="card__title">Целевая аудитория</h3>
+          <p>Студенты 1–2 курса направления «Дизайн».</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Формат</h3>
+          <p>Синхронно (видеоконференция) + асинхронно (материалы на диске).</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Результат</h3>
+          <p>Макет главной страницы и интерактивный прототип в Figma.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section class="section section--alt" id="goals">
+    <div class="container">
+      <h2 class="section__title"><span class="section__deco">⚙</span> Цель и задачи</h2>
+      <p class="section__lead">
+        Сформировать базовые навыки проектирования интерфейса сайта и создания
+        интерактивного прототипа главной страницы с использованием цифровых инструментов.
+      </p>
+      <div class="cards cards--3">
+        <article class="card">
+          <h3 class="card__title">Образовательные</h3>
+          <ul class="list">
+            <li>Принципы веб-дизайна и UI</li>
+            <li>Структура главной страницы</li>
+            <li>Анализ существующих сайтов</li>
+            <li>Работа с техническим заданием</li>
+            <li>Возможности Figma</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Развивающие</h3>
+          <ul class="list">
+            <li>Визуальное мышление</li>
+            <li>Анализ и принятие решений</li>
+            <li>Работа с цифровыми инструментами</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Воспитательные</h3>
+          <ul class="list">
+            <li>Ответственность за проект</li>
+            <li>Самостоятельность</li>
+            <li>Ориентация на потребности пользователей</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stages -->
+  <section class="section" id="stages">
+    <div class="container">
+      <h2 class="section__title"><span class="section__deco">⚙</span> Этапы занятия</h2>
+      <p class="section__lead">90 минут: инструктаж, теория, практика, обсуждение и рефлексия.</p>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__time">10 мин</span>
+            <span class="accordion__title">1. Инструктивный блок</span>
+          </button>
+          <div class="accordion__body">
+            <p>Подключение к Яндекс Телемосту, постановка темы и цели, знакомство с материалами на Яндекс Диске,
+            краткая инструкция по Figma: Frame, текст, изображения, компоненты, режим Prototype.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__time">20 мин</span>
+            <span class="accordion__title">2. Информационный блок</span>
+          </button>
+          <div class="accordion__body">
+            <p>Понятие веб-дизайна, принципы: визуальная иерархия, композиция, цвет, типографика, сетка, адаптивность.
+            Структура страницы: Header, Hero, информационный блок, основной контент, Footer.
+            Разбор примеров сайтов и демонстрация Figma.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__time">35 мин</span>
+            <span class="accordion__title">3. Практический блок</span>
+          </button>
+          <div class="accordion__body">
+            <p>Разработка главной страницы сайта университетского фестиваля студенческих проектов:
+            изучение ТЗ, структура, макет в Figma, настройка минимум одного интерактивного перехода.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__time">15 мин</span>
+            <span class="accordion__title">4. Коммуникационный блок</span>
+          </button>
+          <div class="accordion__body">
+            <p>Публикация ссылок на макеты в общей папке, демонстрация работ, обсуждение структуры,
+            иерархии, цветов, шрифтов и удобства взаимодействия. Взаимные комментарии.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__time">10 мин</span>
+            <span class="accordion__title">5. Оценивание и рефлексия</span>
+          </button>
+          <div class="accordion__body">
+            <p>Тест в Яндекс Формах, формирующее оценивание в процессе работы, итоговая оценка по листу критериев,
+            рефлексия и домашнее задание — мобильная версия 390 px.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="section section--alt" id="tools">
+    <div class="container">
+      <h2 class="section__title"><span class="section__deco">⚙</span> Цифровые инструменты</h2>
+      <div class="tools">
+        <div class="tool"><span class="tool__name">Figma</span><span class="tool__desc">Макет и прототип</span></div>
+        <div class="tool"><span class="tool__name">Яндекс Телемост</span><span class="tool__desc">Видеоконференция</span></div>
+        <div class="tool"><span class="tool__name">Яндекс Диск</span><span class="tool__desc">Материалы и работы</span></div>
+        <div class="tool"><span class="tool__name">Яндекс Формы</span><span class="tool__desc">Тест и рефлексия</span></div>
+        <div class="tool"><span class="tool__name">Google Fonts</span><span class="tool__desc">Шрифты</span></div>
+        <div class="tool"><span class="tool__name">Unsplash / Pexels</span><span class="tool__desc">Изображения</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task -->
+  <section class="section" id="task">
+    <div class="container">
+      <h2 class="section__title"><span class="section__deco">⚙</span> Практическое задание</h2>
+      <p class="section__lead">
+        Разработать главную страницу сайта университетского фестиваля студенческих проектов
+        и собрать интерактивный прототип в Figma.
+      </p>
+
+      <div class="task-grid">
+        <article class="card card--accent">
+          <h3 class="card__title">Обязательные элементы</h3>
+          <ol class="list list--num">
+            <li>Логотип или название фестиваля</li>
+            <li>Навигационное меню</li>
+            <li>Главный заголовок и краткое описание</li>
+            <li>Кнопка «Принять участие»</li>
+            <li>Информационный блок о фестивале</li>
+            <li>Блок направлений проектов</li>
+            <li>Контактная информация</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Требования к работе</h3>
+          <ul class="list">
+            <li>Макет выполнен в Figma</li>
+            <li>Ширина основного фрейма — 1440 px</li>
+            <li>Логичная последовательность блоков</li>
+            <li>Сочетающиеся цвета и шрифты</li>
+            <li>Читаемый текст</li>
+            <li>Минимум один переход в Prototype</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>Идея интерактива:</strong> при нажатии на «Принять участие» пользователь переходит
+        к блоку с информацией о регистрации.
+      </div>
+    </div>
+  </section>
+
+  <!-- Criteria -->
+  <section class="section section--alt" id="criteria">
+    <div class="container">
+      <h2 class="section__title"><span class="section__deco">⚙</span> Лист оценивания</h2>
+      <p class="section__lead">Максимум 14 баллов. Каждый критерий — от 0 до 2 баллов.</p>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Критерий</th>
+              <th>0 баллов</th>
+              <th>1 балл</th>
+              <th>2 балла</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Соответствие ТЗ</td>
+              <td>Не выполнены</td>
+              <td>Частично</td>
+              <td>Все требования</td>
+            </tr>
+            <tr>
+              <td>Структура сайта</td>
+              <td>Отсутствует</td>
+              <td>Небольшие недочёты</td>
+              <td>Последовательная</td>
+            </tr>
+            <tr>
+              <td>Визуальная иерархия</td>
+              <td>Нет акцентов</td>
+              <td>Частично</td>
+              <td>Главное выделено</td>
+            </tr>
+            <tr>
+              <td>Цвет и типографика</td>
+              <td>Неудачно</td>
+              <td>Недочёты</td>
+              <td>Хорошо сочетаются</td>
+            </tr>
+            <tr>
+              <td>Композиция</td>
+              <td>Хаотично</td>
+              <td>Проблемы</td>
+              <td>Сбалансирована</td>
+            </tr>
+            <tr>
+              <td>Интерактивность</td>
+              <td>Отсутствует</td>
+              <td>Частично</td>
+              <td>Корректно</td>
+            </tr>
+            <tr>
+              <td>Презентация</td>
+              <td>Нет</td>
+              <td>Частично</td>
+              <td>Решения объяснены</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="scale">
+        <span class="scale__item scale__item--5">12–14 · отлично</span>
+        <span class="scale__item scale__item--4">9–11 · хорошо</span>
+        <span class="scale__item scale__item--3">6–8 · удовлетворительно</span>
+        <span class="scale__item scale__item--2">0–5 · доработка</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section class="section" id="resources">
+    <div class="container">
+      <h2 class="section__title"><span class="section__deco">⚙</span> Полезные ресурсы</h2>
+      <p class="section__lead">Подборки для поиска идей, шрифтов, цветов и иконок.</p>
+
+      <div class="resources">
+        <div class="resource-group">
+          <h3 class="resource-group__title">Примеры веб-дизайна</h3>
+          <ul class="resource-list">
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a> — визуальные идеи</li>
+            <li><a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a> — кейсы и процессы</li>
+            <li><a href="https://www.awwwards.com" target="_blank" rel="noopener">Awwwards</a> — композиция и анимация</li>
+            <li><a href="https://land-book.com" target="_blank" rel="noopener">Land-book</a> — главные страницы</li>
+            <li><a href="https://mobbin.com" target="_blank" rel="noopener">Mobbin</a> — интерфейсы и сценарии</li>
+          </ul>
+        </div>
+
+        <div class="resource-group">
+          <h3 class="resource-group__title">Шрифты и типографика</h3>
+          <ul class="resource-list">
+            <li><a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a></li>
+            <li><a href="https://fontjoy.com" target="_blank" rel="noopener">Fontjoy</a> — сочетания шрифтов</li>
+            <li><a href="https://fontpair.co" target="_blank" rel="noopener">Fontpair</a></li>
+            <li><a href="https://www.fontshare.com" target="_blank" rel="noopener">Fontshare</a></li>
+            <li><a href="https://typescale.com" target="_blank" rel="noopener">Type Scale</a></li>
+          </ul>
+        </div>
+
+        <div class="resource-group">
+          <h3 class="resource-group__title">Цвет и графика</h3>
+          <ul class="resource-list">
+            <li><a href="https://coolors.co" target="_blank" rel="noopener">Coolors</a> — палитры</li>
+            <li><a href="https://huemint.com" target="_blank" rel="noopener">Huemint</a></li>
+            <li><a href="https://realtimecolors.com" target="_blank" rel="noopener">Realtime Colors</a></li>
+            <li><a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> / <a href="https://pexels.com" target="_blank" rel="noopener">Pexels</a></li>
+            <li><a href="https://iconify.design" target="_blank" rel="noopener">Iconify</a> — иконки</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Проект дистанционного занятия по веб-дизайну · MMXXVI</p>
+      <p>Материалы размещены в учебных целях · Figma · Яндекс Телемост · Яндекс Диск</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
